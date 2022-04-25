@@ -14,18 +14,12 @@ const Task = ({ task, handleTaskOnClick, handleTaskRemoval }) => {
         {task.title}
       </div>
 
-      <div className="buttons-container">
-        <button className="task-info-button" onClick={""}>
-          <CgInfo />
-        </button>
-
-        <button
-          className="remove-task-button"
-          onClick={() => handleTaskRemoval(task.id)}
-        >
-          <CgClose />
-        </button>
-      </div>
+      <button
+        className="remove-task-button"
+        onClick={() => handleTaskRemoval(task.id)}
+      >
+        <CgClose />
+      </button>
     </div>
   );
 };

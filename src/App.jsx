@@ -9,18 +9,7 @@ import AddTask from "./components/AddTask";
 import "./App.css";
 
 function App() {
-  const [tasks, setTasks] = useState([
-    {
-      id: 1,
-      title: "Study programming",
-      completed: false,
-    },
-    {
-      id: 2,
-      title: "Read books",
-      completed: true,
-    },
-  ]);
+  const [tasks, setTasks] = useState([]);
 
   const handleTaskAddition = (taskTitle) => {
     const newTasks = [
