@@ -16,13 +16,40 @@
   padding: 15px 20px;
 }
 
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-info-button {
+  background-color: transparent;
+  color: lime;
+  font-size: 18px;
+  border: none;
+  display: grid;
+  place-items: center;
+  padding: 5px;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.task-info-button:hover {
+  background-color: lime;
+  color: black;
+}
+
 .remove-task-button {
   background-color: transparent;
   border: none;
   outline: none;
-  font-size: 16px;
+  padding: 3px;
   color: lime;
+  font-size: 18px;
   transition: ease 300ms;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
 }
 
 .remove-task-button:hover {

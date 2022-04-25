@@ -1,4 +1,6 @@
+// Packages
 import React from "react";
+// Components
 import Task from "./Task";
 
 const Tasks = ({ tasks, handleTaskOnClick, handleTaskRemoval }) => {

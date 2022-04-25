@@ -1,8 +1,12 @@
+// packages
 import { useState } from "react";
-import "./App.css";
+import { v4 as uuidv4 } from "uuid";
+// Components
+import Header from "./components/Header";
 import Tasks from "./components/Tasks";
 import AddTask from "./components/AddTask";
-import { v4 as uuidv4 } from "uuid";
+// Styles
+import "./App.css";
 
 function App() {
   const [tasks, setTasks] = useState([
@@ -48,6 +52,7 @@ function App() {
   return (
     <>
       <div className="container">
+        <Header />
         <AddTask handleTaskAddition={handleTaskAddition} />
         <Tasks
           tasks={tasks}

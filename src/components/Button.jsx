@@ -1,4 +1,6 @@
+// Packages
 import React from "react";
+// Styles
 import "./Button.css";
 
 const Button = ({ children, onClickEvent }) => {
