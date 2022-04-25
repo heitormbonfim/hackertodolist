@@ -8,4 +8,10 @@
   font-weight: bold;
   cursor: pointer;
   border: solid 1px lime;
+  transition: ease 300ms;
+}
+
+.default-button:hover {
+  background-color: #111;
+  color: lime
 }

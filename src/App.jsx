@@ -31,11 +31,29 @@ function App() {
     setTasks(newTasks);
   };
 
+  const handleTaskRemoval = (taskId) => {
+    const newTasks = tasks.filter((task) => task.id !== taskId);
+    setTasks(newTasks);
+  };
+
+  const handleTaskOnClick = (taskId) => {
+    const newTasks = tasks.map((task) => {
+      if (task.id === taskId) return { ...task, completed: !task.completed };
+      return task;
+    });
+
+    setTasks(newTasks);
+  };
+
   return (
     <>
       <div className="container">
         <AddTask handleTaskAddition={handleTaskAddition} />
-        <Tasks tasks={tasks} />
+        <Tasks
+          tasks={tasks}
+          handleTaskOnClick={handleTaskOnClick}
+          handleTaskRemoval={handleTaskRemoval}
+        />
       </div>
     </>
   );
