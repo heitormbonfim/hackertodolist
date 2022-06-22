@@ -1,7 +1,8 @@
-# How To Install
-## 1. clone this project
-## 2. open the directory in your terminal
-## 3. Run the commands below: 
+# Hacker To Do List Made With React JS
+## How To Install 
+### 1. clone this project
+### 2. open the directory in your terminal
+### 3. Run the commands below: 
 ```bash 
 npm install
 ```
